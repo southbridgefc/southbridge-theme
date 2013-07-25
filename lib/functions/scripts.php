@@ -30,7 +30,7 @@ function sbridge_register_scripts() {
 	
 	// Frontend Scripts
 	//wp_register_script( 'sbridge-font-script', 'http://fast.fonts.com/jsapi/6c3cc8ca-47a5-45c3-b514-e25481917b16.js', '', CHILD_THEME_VERSION, true );
-	wp_register_script( 'sbridge-script', CHILD_JS . '/southbridge' . $suffix, array( 'jquery-ui', ), CHILD_THEME_VERSION, false );
+	//wp_register_script( 'sbridge-script', CHILD_JS . '/southbridge' . $suffix, array( 'jquery-ui', ), CHILD_THEME_VERSION, false );
 	
 	// Frontend Styles
 	//wp_register_style( 'sbridge-font-style', 'http://fast.fonts.com/cssapi/6c3cc8ca-47a5-45c3-b514-e25481917b16.css', array(), $theme->version );
@@ -63,8 +63,8 @@ add_action( 'wp_enqueue_scripts', 'sbridge_enqueue_scripts', 20 );
 function sbridge_enqueue_scripts() {
 	$suffix = ( WP_DEBUG || WP_SCRIPT_DEBUG ) ? '.js' : '.min.js';
 	
-	//wp_enqueue_script( 'sbridge-font-script' );
-	wp_enqueue_script( 'sbridge-script' );
+	//wp_enqueue_script( 'sbridge-font-script' );	
+	wp_enqueue_script( 'sbridge-script', CHILD_JS . '/southbridge' . $suffix, array( 'jquery' ), CHILD_THEME_VERSION, false);
 
 	wp_dequeue_script( 'superfish-args' );
 	wp_enqueue_script( 'sbridge-superfish-args', CHILD_JS . '/superfish.args' . $suffix, array( 'superfish' ), CHILD_THEME_VERSION, true );
