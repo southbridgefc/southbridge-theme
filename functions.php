@@ -82,6 +82,16 @@ function sbridge_setup() {
 			'description' => __( 'Place chosen widget in this area for service times.', 'sbridge' ),
 		)
 	);
+
+	/* @jagcrete - add footer-contact-info widget */
+	genesis_register_sidebar(
+		array(
+			'id'					=> 'footer-contact-info',
+			'name'        => __( 'Footer Contact Info', 'sbridge' ),
+			'description' => __( 'Place chosen widget in this area for contact info to appear in the footer.', 'sbridge' ),			
+		)
+	);
+
 	
 	/** Adjust Genesis Menus */
 	add_theme_support(

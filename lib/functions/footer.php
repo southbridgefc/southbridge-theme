@@ -98,5 +98,11 @@ add_filter( 'genesis_footer_output', 'child_footer_output', 10, 3 );
  * Customize the entire footer
  */
 function child_footer_output( $output, $backtotop_text, $creds_text ) {
-    return '<div class="creds"><img src="' . get_stylesheet_directory_uri() . '/images/logo-small.png" /><p>9311 Focal Point  Suite 101  Raleigh, NC 27617   (919) 789-9955</p></div>';
+	genesis_widget_area(
+		'footer-contact-info',
+		array(
+			'before' => '<div class="creds">'
+		)
+	);
+	return '';
 }
