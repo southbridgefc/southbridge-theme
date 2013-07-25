@@ -1,0 +1,107 @@
+body {
+	color: #333;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0;
+	padding: 1em 5%;
+}
+
+/* Header styling should be placed here when completed */
+
+/* Column Classes
+------------------------------------------------------------ */
+
+.five-sixths,
+.four-fifths,
+.four-sixths,
+.one-fifth,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fifths,
+.three-fourths,
+.three-sixths,
+.two-fifths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+    float: left;
+    margin: 0 0 20px;
+    padding-left: 3%;
+}
+
+.one-half,
+.three-sixths,
+.two-fourths {
+    width: 48%;
+}
+
+.one-third,
+.two-sixths {
+    width: 31%;
+}
+
+.four-sixths,
+.two-thirds {
+    width: 65%;
+}
+
+.one-fourth {
+    width: 22.5%;
+}
+
+.three-fourths {
+    width: 73.5%;
+}
+
+.one-fifth {
+    width: 17.4%;
+}
+
+.two-fifths {
+    width: 37.8%;
+}
+
+.three-fifths {
+    width: 58.2%;
+}
+
+.four-fifths {
+    width: 78.6%;
+}
+
+.one-sixth {
+    width: 14%;
+}
+
+.five-sixths {
+    width: 82%;
+}
+
+.first {
+    clear: both;
+    padding-left: 0;
+}
+
+/* Colours
+------------------------------------------------------------ */
+
+body {
+	background-color: rgb(213,213,213);
+	background-image: -webkit-linear-gradient(bottom, rgb(213,213,213) 2%, rgb(194,194,194) 50%);
+	background-image:    -moz-linear-gradient(bottom, rgb(213,213,213) 2%, rgb(194,194,194) 50%);
+	background-image:     -ms-linear-gradient(bottom, rgb(213,213,213) 2%, rgb(194,194,194) 50%);
+	background-image:      -o-linear-gradient(bottom, rgb(213,213,213) 2%, rgb(194,194,194) 50%);
+	background-image:         linear-gradient(bottom, rgb(213,213,213) 2%, rgb(194,194,194) 50%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.02, rgb(213,213,213)),
+		color-stop(0.5, rgb(194,194,194))
+	);
+	color: #333;
+}
